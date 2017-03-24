@@ -12,12 +12,12 @@
   color: white;
 }
 .hero {
-  background: image_url('hero.jpg') no-repeat center center fixed;
+  background: image_url('hero1.jpg') center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;;
-  height: 370px;
+  height: 800px;
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -39,4 +39,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 .btn {
   border-radius: 0;
+}
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body {
+  background: image_url('bg.png');
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
