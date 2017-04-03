@@ -3,7 +3,7 @@
   <head>
     <title>Flixter</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,6 +16,11 @@
         </button>
         <%= link_to 'Flixter', root_path, class: 'navbar-brand' %>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to 'See All Courses', courses_path, class: 'nav-link' %>
+            </li>
+          </ul>
           <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
               <li class="nav-item">
