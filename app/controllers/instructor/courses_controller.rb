@@ -1,13 +1,13 @@
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course
+  before_action :require_authorized_for_current_course, only: [:show]
 
   def new
     @course = Course.new
   end
 
   def create
-    current_course = current_user.courses.create(course_params)
+    @course = current_user.courses.create(course_params)
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
@@ -22,13 +22,13 @@ class Instructor::CoursesController < ApplicationController
 
   def require_authorized_for_current_course
     if current_course.user != current_user
-      render text: "Unauthorized", status: :Unauthorized
+      render text: "Unauthorized", status: :unauthorized
     end
   end
 
   helper_method :current_course
   def current_course
-    @current_course ||= Course.find(params[:course_id])
+    @current_course ||= Course.find(params[:id])
   end
 
   def course_params
