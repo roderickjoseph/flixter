@@ -60,3 +60,15 @@ gem 'simple_form'
 
 # Devise - User Auth
 gem 'devise'
+
+# CarrierWave - Image Upload
+gem 'carrierwave', '~> 1.0'
+
+# Figaro - Secure API keys for AWS
+gem 'figaro'
+
+# Fog - Carrierwave work with Amazon S3
+gem 'fog'
+
+# Minimajick - to work with ImageMagick (image upload resize)
+gem 'mini_magick'
