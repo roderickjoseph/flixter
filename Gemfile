@@ -72,3 +72,6 @@ gem 'fog'
 
 # Minimajick - to work with ImageMagick (image upload resize)
 gem 'mini_magick'
+
+# for video uploading with AWS
+gem 'carrierwave-aws'
