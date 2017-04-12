@@ -81,3 +81,5 @@ gem 'stripe'
 
 # to make courses, sections and lessons orderable
 gem 'ranked-model'
+
+gem 'jquery-ui-rails'
