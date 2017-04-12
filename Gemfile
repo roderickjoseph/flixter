@@ -78,3 +78,6 @@ gem 'carrierwave-aws'
 
 # To handle payments
 gem 'stripe'
+
+# to make courses, sections and lessons orderable
+gem 'ranked-model'
