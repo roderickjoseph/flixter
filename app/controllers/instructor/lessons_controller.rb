@@ -30,7 +30,7 @@ class Instructor::LessonsController < ApplicationController
 
   def require_authorized_for_current_section
     render text: 'Unauthorized', status: :unauthorized unless
-    current_section.course.user != current_user
+    current_section.course.user == current_user
   end
 
   helper_method :current_section
