@@ -21,12 +21,12 @@ class Instructor::SectionsController < ApplicationController
 
   def require_authorized_for_current_section
     render text: 'Unauthorized - section', status: :unauthorized unless
-    current_section.course.user != current_user
+    current_section.course.user == current_user
   end
 
   def require_authorized_for_current_course
     render text: 'Unauthorized - course', status: :unauthorized unless
-    current_course.user != current_user
+    current_course.user == current_user
   end
 
   helper_method :current_course
