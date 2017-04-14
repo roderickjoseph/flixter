@@ -39,6 +39,12 @@ class Instructor::SectionsController < ApplicationController
     end
   end
 
+  helper_method :current_section
+
+  def current_section
+    @current_section ||= Section.find(params[:id])
+  end
+
   def section_params
     params.require(:section).permit(:title, :row_order_position)
   end
