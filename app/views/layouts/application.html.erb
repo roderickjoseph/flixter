@@ -25,6 +25,9 @@
           <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
               <li class="nav-item">
+                <%= link_to 'My Dashboard', dashboard_path %>
+              </li>
+              <li class="nav-item">
                 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
               </li>
             <% else %>
