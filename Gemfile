@@ -62,7 +62,7 @@ gem 'simple_form'
 gem 'devise'
 
 # CarrierWave - Image Upload
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
 
 # Figaro - Secure API keys for AWS
 gem 'figaro'

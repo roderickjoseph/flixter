@@ -13,7 +13,7 @@
   color: white;
 }
 .hero {
-  background: image_url('hero1.jpg') center;
+  background: image_url('hero_image.jpg') center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
 }
 .frosty {
-  background: rgba(0, 0, 0, 0.5);
+  // background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 .frosty h1 {

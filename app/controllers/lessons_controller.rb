@@ -14,7 +14,7 @@ class LessonsController < ApplicationController
   end
 
   def require_enrollment_to_view
-    redirect_to course_path(current_course), alert: 'You are not enrolled in this course' unless
+    redirect_to(course_path(current_course), alert: 'You are not enrolled in this course') unless
     current_user.enrolled_in?(current_course)
   end
 
